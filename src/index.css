@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Poppins", "san-serif";
+  }
+}
+
+@layer components {
+  .button {
+    @apply text-white px-8 py-2 rounded hover:shadow-lg;
+  }
+
+  .hover-nav {
+    @apply bg-gradient-to-r from-blue-600 to-pink-400 bg-clip-text text-transparent;
+  }
+
+  .border-nav {
+    @apply w-[40px] h-[2px] bg-green-400 block group-hover:visible;
+  }
+
+  .bg-gradient {
+    @apply bg-gradient-to-r from-green-400 to-blue-400;
+  }
+
+  .border-gradient {
+    @apply w-[140px] h-[8px] bg-gradient block mt-4 mx-auto rounded-full;
+  }
+}
